@@ -54,13 +54,12 @@ selectFilterAllLi.forEach((li) => {
     filterCountry.classList.add("hidden");
     selectFilterSpan.textContent = li.textContent;
     let filterApi;
-    console.log(li.textContent);
+    // console.log(li.textContent);
     if (li.textContent == `All`) {
       filterApi = `https://countries-api-v7sn.onrender.com/countries?limit=250`;
     } else {
       filterApi = `https://countries-api-v7sn.onrender.com/countries?region=${li.textContent}`;
     }
-
     getData(filterApi)
       .then((data) => {
         UpdateUI(data);

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -291,7 +291,7 @@ main {
 /* ========================================== */
 /* About html */
 .about_wrapper-div{
-    display: flex;
+  display: flex;
 }
 .about_btn{
   width: 13.6rem;
@@ -317,6 +317,26 @@ main {
 .img_wrapper{
   margin-right: 12rem;
 }
+.img_wrapper img{
+  border-radius: 2rem;
+  box-shadow: 0px 0px 7px 0px #0000004B;
+}
 .about_informations2{
   margin-top: 5rem;
+}
+.border_place{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-left: 75rem;
+  margin-top: -14rem;
+}
+.border-btn{
+  width: 9.6rem;
+  height: 2.8rem;
+  background-color: var(--body-bc-in-light-color);
+  color: var(--in-light-mode-texta-color);
+}
+.border-countries{
+  margin-bottom: 2.3rem;
 }
